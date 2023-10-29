@@ -41,9 +41,18 @@ function castBoolean(value) {
 
 //console.log(castBoolean("zopa"));
 
-function capitalize(
-    
-) {}
+function capitalize(str, num) {
+  if (num < 0 || num + 1 > str.length) {
+    return str;
+  }
+  return str.slice(0, num) + str[num].toUpperCase() + str.slice(num + 1, str.length);
+}
+
+console.log(capitalize('alo', 0));
+
+
+Message
+
 function countCapitalLetters() {}
 
 export {
