@@ -289,3 +289,18 @@ const countAverage = (numbers) => {
 };
 
 console.log(countAverage(arr)); 
+
+
+const arr = [1,2,3,4];
+function alphaOmega(inputArray) {
+
+    let newArray = [];
+
+    if (inputArray && inputArray.length > 0) {
+        newArray.push(inputArray[0]);
+        newArray.push(inputArray.at(-1));
+    }
+
+    return newArray;
+}
+console.log (alphaOmega (arr));
