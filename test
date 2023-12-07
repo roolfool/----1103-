@@ -330,3 +330,26 @@ function fill(count, element) {
 
 const resultArray = fill(5, 'hello');
 console.log(resultArray);
+
+
+
+
+
+
+
+
+function fromPairs(pairsArray) {
+  return pairsArray.reduce((result, pair) => {
+    if (Array.isArray(pair) && pair.length === 2) {
+      const [key, value] = pair;
+      result[key] = value;
+    }
+    return result;
+  }, {});
+}
+
+// Пример использования
+const pairsArray = [['a', 1], ['b', 2], ['c', 3]];
+const resultObject = fromPairs(pairsArray);
+console.log(resultObject);
+
