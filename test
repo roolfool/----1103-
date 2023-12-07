@@ -278,6 +278,9 @@ console.log(`Ответ: ${calculateDiscount(print, text)}`);
     20. git push
 
 
+
+
+
 const arr = [1,2,3];
 
 const countAverage = (numbers) => {
@@ -289,6 +292,10 @@ const countAverage = (numbers) => {
 };
 
 console.log(countAverage(arr)); 
+
+
+
+
 
 
 const arr = [1,2,3,4];
@@ -304,3 +311,22 @@ function alphaOmega(inputArray) {
     return newArray;
 }
 console.log (alphaOmega (arr));
+
+
+
+
+
+
+function fill(count, element) {
+  let result = [];
+  
+  for (let i = 0; i < count; i++) {
+    result.push(element);
+  }
+  
+  return result;
+}
+
+
+const resultArray = fill(5, 'hello');
+console.log(resultArray);
