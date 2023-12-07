@@ -353,3 +353,22 @@ const pairsArray = [['a', 1], ['b', 2], ['c', 3]];
 const resultObject = fromPairs(pairsArray);
 console.log(resultObject);
 
+
+
+
+
+
+
+function intersection(arr1, arr2) {
+  // Фильтруем уникальные значения, которые присутствуют в обоих массивах
+  const result = Array.from(new Set(arr1.filter(value => arr2.includes(value))));
+
+  return result;
+}
+
+// Пример использования функции
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [3, 4, 5, 6, 7];
+
+const resultArray = intersection(array1, array2);
+console.log(resultArray);
