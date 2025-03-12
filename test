@@ -256,7 +256,7 @@ console.log(`Ответ: ${calculateDiscount(print, text)}`);
 
 
 
-1. Ssh-keygen
+1. Ssh-keygen -t rsa
     2. cat ~/.ssh/id_rsa.pub → enter enter enter
     3. copy ssh to github and generate new key
     4. ssh -T git@github.com
